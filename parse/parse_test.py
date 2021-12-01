@@ -1,4 +1,4 @@
-from parse_module import parse
+from parse.parse_module import parse
 import unittest
 
 

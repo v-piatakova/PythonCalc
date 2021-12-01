@@ -67,4 +67,3 @@ def OPZ(a):
 if __name__ == "__main__":
     OPZ(['4', '+', '6', '-', '2'])
     print(string)
-

@@ -1,8 +1,7 @@
 # !/usr/bin/env python
 # coding: utf-8
-import os
-import parse_module
-import OPZ_module
+from parse import parse_module
+from OPZ import OPZ_module
 
 OPERATORS = {'+': (lambda x, y: x + y), '-': (lambda x, y: x - y),
              '*': (lambda x, y: x * y), '/': (lambda x, y: x / y),

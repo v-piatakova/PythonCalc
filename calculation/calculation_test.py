@@ -1,4 +1,4 @@
-from parse_function import parse
+from calculation.calculation_module import calculation
 import unittest
 
 
