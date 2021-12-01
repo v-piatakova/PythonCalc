@@ -4,9 +4,9 @@ OPERATORS = {'+': (lambda x, y: x + y), '-': (lambda x, y: x - y),
 string = []
 
 
-def calculation(arr):
+def calculation(string):
     i = 0
-    while i < range(len(string)):
+    while i < len(string):
         char = string[i]
         if char in OPERATORS:
             res = OPERATORS[char](int(string[i - 2]), int(string[i - 1]))
@@ -17,11 +17,10 @@ def calculation(arr):
             i -= 2
         else:
             i += 1
+    print(string[0])
+    return string[0]
 
-    print string[0]
 
-
-calculation(['4', '6', '+', '2', '-'])
-# if __name__ == "__main__":
-#     calculation(['4', '6', '+', '2', '-'])
-#     print(string[0])
+if __name__ == "__main__":
+    calculation(['4', '6', '+', '2', '-'])
+    print(string[0])
