@@ -1,18 +1,29 @@
 # !/usr/bin/env python
 # coding: utf-8
 import os
-from Calculator import OPERATORS
-from Calculator import operations
-from Calculator import parsed_formula
-from Calculator import PRIORITY
+
+OPERATORS = {'+': (lambda x, y: x + y), '-': (lambda x, y: x - y),
+             '*': (lambda x, y: x * y), '/': (lambda x, y: x / y),
+             '%': (lambda x, y: x % y)}
+
+PRIORITY = {
+    '/': 4,
+    '*': 4,
+    '%': 4,
+    '+': 3,
+    '-': 3,
+    '(': 2,
+    ')': 2,
+}
 
 a = []
 string = []
+operations = []
 
 
 def OPZ(a):
     count = 0
-    for s in parsed_formula:
+    for s in a:
         if s.isdigit():
             string.append(s)
         elif s == "(":
@@ -49,4 +60,11 @@ def OPZ(a):
     while operations:
         string.append(operations[-1])
         operations.pop()
+    print(string)
     return string
+
+
+if __name__ == "__main__":
+    OPZ(['4', '+', '6', '-', '2'])
+    print(string)
+

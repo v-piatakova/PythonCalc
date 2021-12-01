@@ -16,6 +16,10 @@ def parse(string):
             parsed_formula.append(s)
     if number:
         parsed_formula.append(number)
+    print(parsed_formula)
     return parsed_formula
 
 
+if __name__ == "__main__":
+    parse("4+6-2")
+    print(parsed_formula)

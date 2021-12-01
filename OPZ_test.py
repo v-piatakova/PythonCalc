@@ -1,4 +1,4 @@
-from OPZ_function import OPZ
+from OPZ_module import OPZ
 import unittest
 
 
