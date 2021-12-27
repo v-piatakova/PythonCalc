@@ -19,6 +19,7 @@ OPERATORS = {'+': (lambda x, y: x + y), '-': (lambda x, y: x - y),
 PRIORITY = {
     '/': 4,
     '*': 4,
+
     '%': 4,
     '+': 3,
     '-': 3,
