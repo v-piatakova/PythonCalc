@@ -1,3 +1,0 @@
-[console_scripts]
-calculator = calculator.Calculator:calculation_module
-
